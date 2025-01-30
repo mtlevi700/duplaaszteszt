@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
+header{
+    width: 100%;
+    height: 48px;
+    background-color: bisque;
+}
+.navbar_mobile{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(173, 184, 184);
+    width: 100%;
+    height: inherit;
+}
+.menu_icons{
+    display: flex;
+    position: absolute;
+    left: 15px;
+    align-items: center;
+}
+.bars{
+    display:flex;
+    gap: 3px;
+    flex-direction: column;
+    position: absolute;
+}
+
+.bar{
+    width: 23px;
+    height: 4px;
+    background-color: rgb(61, 61, 61);
+    border-radius: 30px;
+
+
+}
+.close{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+.close .bar {
+    position: absolute;
+}
+
+.close .bar:first-child {
+    transform: rotate(45deg);
+}
+
+.close .bar:last-child {
+    transform: rotate(-45deg);
+}
+.logolink{
+    height:48px;
+}
+.logo{
+    height:100%;
+    padding-right: 5px;
+}
+nav {
+    display: none;
+    background-color: rgb(170, 170, 170);
+    width: 100%;
+    top: 48px;
+    position: fixed;
+    max-height: 0; /* Kezdetben rejtett */
+    overflow: hidden; /* Rejtse el a tartalmat, ami túlcsordul */
+    transition: max-height 0.3s ease-in-out; /* Animáció */
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+
+}
+nav ul li{
+    border-bottom: 3px solid #7e7e7e;
+    padding: 10px;
+
+}
+nav ul li a{
+    display:flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+
+}
+nav ul img{
+    height: 20px;
+    width: 20px;
+}
+nav.active {
+    max-height: 287px; /* Állítsd be a megfelelő maximális magasságot */
+}
+nav ul li.active{
+    background-color: #f0f0f0;
+}
+
+
+@media only screen and (min-width: 600px) {}
