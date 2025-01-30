@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
         bars.style.display = 'flex';
         close.style.display = 'none';
         nav.classList.remove('active');
-        setTimeout(() => {
+        nav.addEventListener('transitionend', function() {
             if (!nav.classList.contains('active')) {
                 nav.style.display = 'none';
             }
-        }, 500); // Várakozás az animáció befejezéséig
+        }, { once: true }); // Csak egyszer fut le az eseménykezelő
     });
 });
