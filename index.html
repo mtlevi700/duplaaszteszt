@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <header>
@@ -39,7 +41,17 @@
 
         </ul>
     </nav>
+   
     <main>
+        <section class="center slider">
+            <div><img src="images/index_html/slide/dscf0109.png" alt="Co Lee bohóc sminkben énekel"></div>
+            <div><img src="images/index_html/slide/dscf0118.png" alt="Co Lee bohóc sminkben énekel"></div>
+            <div><img src="images/index_html/slide/dscf0098.png" alt="Co Lee bohóc sminkben énekel"></div>
+            <div><img src="images/index_html/slide/dscf0122.png" alt="Co Lee bohóc sminkben énekel"></div>
+            <div><img src="images/index_html/slide/dscf0144.png" alt="Co Lee bohóc sminkben énekel"></div>
+            <div><img src="images/index_html/slide/dscf0123.png" alt="Co Lee bohóc sminkben énekel"></div>
+        </section>
+        
         <article>
             <h1>Rólunk</h1>
             <section class="about">
@@ -65,5 +77,43 @@
         <!-- Lábléc tartalom -->
     </footer>
     <script src="navbar_mobile.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".center").slick({
+                dots: false,
+                infinite: true,
+                centerMode: true,
+                centerPadding: '0px',
+                mobileFirst: true,
+                arrows: false,
+                slidesToShow: 1, /* telefon */
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            dots: true,
+                            centerPadding: '60px',
+                            slidesToShow: 3 /* monitor */
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: false,
+                            dots: true,
+                            centerPadding: '50px',
+                            slidesToShow: 1 /* tablet */
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 </html>

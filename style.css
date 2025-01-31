@@ -110,5 +110,38 @@ nav ul li.active{
     background-color: #f0f0f0;
 }
 
+.slider {
+    width: 100%;
+}
 
-@media only screen and (min-width: 600px) {}
+.slick-slide img {
+    width: 100%;
+    /* Kép szélessége */
+}
+
+.slick-dots li button:before {
+    color: white !important;
+    /* muszáj important, különben a pseudo element átírja */
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .5;
+    opacity: .5;
+}
+
+.slick-active {
+    opacity: .5;
+
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+    /* tablet */
+    .slick-slide {
+        margin: auto 5px;
+    }
+}
