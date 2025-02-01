@@ -149,6 +149,7 @@ nav.active {
 
 nav ul li.active{
     background-color: #f0f0f0;
+    color: black;
 }
 
 
@@ -184,24 +185,36 @@ main{
 
 
 
+/*SZÖVEGEK*/
+.paragraphbox{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    background-color: #ffffff;
+    gap: 8px;
+    padding: 18px;
+}
+.paragraphbox h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
 
-.introduction{
-    margin: 20px;
-    text-align: justify;
-    color:rgb(19, 19, 19);
-    padding: 10px;
-    background-color: white;
+.paragraphbox p{
+
 }
-.introduction p{
-    padding: 
-}
+
+
+
+
+/*PROFESSIONS*/
 .professions{
     display: flex;
     justify-content: center;
     flex-direction: column;
 
 }
-/*PROFESSIONS*/
+
 .profbox {
     display: flex;
     flex-direction: column;
@@ -237,30 +250,22 @@ main{
     padding: 10px;
     min-height:150px;
 }
+.prof img{
+    height: 25px;
+}
 .prof .title{
+    display: flex;
     margin-bottom: 10px;
-    
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-weight: 470;
 }
 .prof p{
     line-height: 1.4;
 }
 
 
-/* ABOUT */
-.about h1{
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 30px;
-}
-.about{
-    text-indent: 1em;
-    margin: 20px;
-    background-color: #ffffff;
-    padding: 10px;
-}
-.about p{
-    margin: 8px;
-}
 
 /* FOOTER */
 footer{
