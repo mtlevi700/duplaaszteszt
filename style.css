@@ -182,7 +182,12 @@ main{
     padding: 15px;
     color:rgb(85, 85, 85);
 }
+.professions{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
+}
 .profbox {
     display: flex;
     flex-direction: column;
@@ -198,6 +203,7 @@ main{
 }
 
 .prof {
+    margin: 10px 0; /* according to gap (same or twice the amount) */
     width: 75%;
     min-width: 250px;
     /* csak gépre
@@ -205,14 +211,17 @@ main{
     background-attachment: fixed;
     background-size: cover; */
     color:white;
-    padding: 15px;
+
 }
 
 
 .text-bg{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.43);
     padding: 10px;
-
+    min-height:140px;
 }
 .prof .title{
     margin-bottom: 10px;
