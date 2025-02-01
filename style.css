@@ -1,16 +1,22 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
 }
+
+
+
+/* MOBILE HEADER */
 header{
     width: 100%;
     height: 48px;
-    background-color: bisque;
+
 }
+
 .navbar_mobile{
     position: fixed;
     display: flex;
@@ -19,13 +25,16 @@ header{
     background-color: rgb(173, 184, 184);
     width: 100%;
     height: inherit;
+    z-index: 1000;
 }
+
 .menu_icons{
     display: flex;
     position: absolute;
     left: 15px;
     align-items: center;
 }
+
 .bars{
     display:flex;
     gap: 3px;
@@ -41,6 +50,7 @@ header{
 
 
 }
+
 .close{
     position: absolute;
     display: flex;
@@ -50,6 +60,7 @@ header{
     height: 20px;
     display: none;
 }
+
 .close .bar {
     position: absolute;
 }
@@ -61,14 +72,21 @@ header{
 .close .bar:last-child {
     transform: rotate(-45deg);
 }
+
 .logolink{
     height:48px;
 }
+
 .logo{
     height:100%;
     padding-right: 5px;
 }
+
+
+
+/* MOBILE NAV */
 nav {
+    z-index: 1000;
     display: none;
     background-color: rgb(170, 170, 170);
     width: 100%;
@@ -78,6 +96,7 @@ nav {
     overflow: hidden; /* Rejtse el a tartalmat, ami túlcsordul */
     transition: max-height 0.3s ease-in-out; /* Animáció */
 }
+
 nav ul{
     display: flex;
     flex-direction: column;
@@ -85,11 +104,13 @@ nav ul{
     padding: 0;
 
 }
+
 nav ul li{
     border-bottom: 3px solid #7e7e7e;
     padding: 10px;
 
 }
+
 nav ul li a{
     display:flex;
     justify-content: space-between;
@@ -99,17 +120,23 @@ nav ul li a{
     width: 100%;
 
 }
+
 nav ul img{
     height: 20px;
     width: 20px;
 }
+
 nav.active {
     max-height: 287px; /* Állítsd be a megfelelő maximális magasságot */
 }
+
 nav ul li.active{
     background-color: #f0f0f0;
 }
 
+
+
+/* JQUERY SLIDER */
 .slider {
     width: 100%;
 }
@@ -139,9 +166,52 @@ nav ul li.active{
     opacity: 1;
 }
 
+
+
+/*PROFESSIONS*/
+.profbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.prof {
+    width: 75%;
+    min-width: 250px;
+    background-image: url('images/index_html/static_background/bg_mid.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    color:white;
+    padding: 15px;
+}
+
+.text-bg{
+    background-color: rgba(0, 0, 0, 0.43);
+    padding: 10px;
+
+}
+.prof .title{
+    margin-bottom: 10px;
+    
+}
+.prof p{
+    line-height: 1.4;
+}
+
+/* FOOTER */
+footer{
+    height: 50px;
+    background-color: #747474;
+}
+
 @media only screen and (min-width: 600px) {
     /* tablet */
     .slick-slide {
         margin: auto 5px;
     }
+
 }
