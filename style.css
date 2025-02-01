@@ -10,9 +10,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Oswald';
+    font-size: 17px;
 }
 body{
-    background-color: #f0f0f0;
+    background-color: white;
 }
 
 
@@ -24,15 +25,15 @@ header{
 
 }
 
-.navbar_mobile{
+.navbar{
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(173, 184, 184);
     width: 100%;
     height: inherit;
     z-index: 1000;
+    background-color: #c2c2c2;
 }
 
 .menu_icons{
@@ -143,6 +144,7 @@ nav ul li.active{
 
 
 main{
+    color:rgb(19, 19, 19)
 }
 /* JQUERY SLIDER */
 .slider {
@@ -178,9 +180,8 @@ main{
 /*PROFESSIONS*/
 .introduction{
     margin: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    color:rgb(85, 85, 85);
+    text-align: justify;
+    color:rgb(19, 19, 19);
 }
 .professions{
     display: flex;
@@ -221,7 +222,7 @@ main{
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.43);
     padding: 10px;
-    min-height:140px;
+    min-height:150px;
 }
 .prof .title{
     margin-bottom: 10px;
@@ -231,8 +232,25 @@ main{
     line-height: 1.4;
 }
 
+
+/* ABOUT */
+.about h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.about{
+    margin: 20px;
+    background-color: rgba(163, 163, 163, 0.4);
+    padding: 10px;
+}
+.about p{
+    margin: 5px;
+}
+
 /* FOOTER */
 footer{
+    text-align: right;
     height: 50px;
     background-color: #747474;
 }
