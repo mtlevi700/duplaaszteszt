@@ -1,19 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/* <weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name */
 
-@font-face {
-    font-family: Protest;
-    font-display: swap;
-    src: url('fonts/ProtestRevolution-Regular.ttf');
+.montserrat-montser {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
 }
+
 *{
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Oswald';
-    font-size: 17px;
-}
+    font-size: 15px;
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    }
 body{
-    background-color: white;
+    background-color: #f6f3f3;
 }
 
 
@@ -28,12 +36,13 @@ header{
 }
 
 .navbar{
+    background-color: rgb(194, 194, 194);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #c2c2c2;
+    
 }
 
 .menu_icons{
@@ -96,7 +105,7 @@ header{
 nav {
     z-index: 1000;
     display: none;
-    background-color: rgb(170, 170, 170);
+    background-color: #cccccc;
     width: 100%;
     top: 56px;
     position: fixed;
@@ -115,7 +124,7 @@ nav ul{
 
 nav ul li{
     border-bottom: 3px solid #7e7e7e;
-    padding: 10px;
+    padding: 14px 10px;
 
 }
 
@@ -135,7 +144,7 @@ nav ul img{
 }
 
 nav.active {
-    max-height: 287px; /* Állítsd be a megfelelő maximális magasságot */
+    max-height: 336px; /* Állítsd be a megfelelő maximális magasságot */
 }
 
 nav ul li.active{
@@ -161,27 +170,30 @@ main{
 }
 
 .slick-slide {
-    transition: all ease-in-out .3s;
-    opacity: .5;
-    opacity: .5;
+    transition: all ease-in-out 1s;
+
 }
 
 .slick-active {
-    opacity: .5;
 
 }
 
 .slick-current {
-    opacity: 1;
+
 }
 
 
 
-/*PROFESSIONS*/
+
 .introduction{
     margin: 20px;
     text-align: justify;
     color:rgb(19, 19, 19);
+    padding: 10px;
+    background-color: white;
+}
+.introduction p{
+    padding: 
 }
 .professions{
     display: flex;
@@ -189,6 +201,7 @@ main{
     flex-direction: column;
 
 }
+/*PROFESSIONS*/
 .profbox {
     display: flex;
     flex-direction: column;
@@ -240,12 +253,13 @@ main{
     font-size: 30px;
 }
 .about{
+    text-indent: 1em;
     margin: 20px;
-    background-color: rgba(163, 163, 163, 0.4);
+    background-color: #ffffff;
     padding: 10px;
 }
 .about p{
-    margin: 5px;
+    margin: 8px;
 }
 
 /* FOOTER */
