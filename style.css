@@ -127,7 +127,8 @@ nav ul{
     flex-direction: column;
     list-style: none;
     padding: 0;
-    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 nav ul li{
@@ -297,14 +298,26 @@ main{
 
 
 /* FOOTER */
-footer .info{
+.info{
     display: flex;
     flex-direction: column;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    text-align: center;
+    gap: 50px;
     color: white;
     background-color: black;
 
+}
+.maps, .contact, .opening{
+
+
+}
+.info img{
+    height: 60px;
+    width: auto;
 }
 .info a{
     text-decoration: none;
