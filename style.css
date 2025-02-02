@@ -117,12 +117,17 @@ nav {
     transition: max-height 0.3s ease-in-out; /* Animáció */
 }
 
+
+nav.active {
+    max-height: 336px; /* Állítsd be a megfelelő maximális magasságot */
+}
+
 nav ul{
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
-
+    backdrop-filter: blur(7px);
 }
 
 nav ul li{
@@ -146,13 +151,12 @@ nav ul img{
     width: 20px;
 }
 
-nav.active {
-    max-height: 336px; /* Állítsd be a megfelelő maximális magasságot */
-}
 
-nav ul li.active{
+
+nav ul li.active a{
 /*     background-color: #f7e2e2; */
-    color: black;
+    font-weight: 600;
+
 }
 
 
@@ -160,6 +164,10 @@ main{
     color:rgb(19, 19, 19)
 }
 /* JQUERY SLIDER */
+
+.carousel{
+    position: relative;
+}
 .slider {
 }
 
@@ -185,7 +193,23 @@ main{
 .slick-current {
 
 }
+.more{
+    position: absolute;
+    color:white;
+    top: 50%;
+    right: 0;
+    padding: 10px 15px;
+    background-color: rgba(51, 80, 127,0.8);
+    text-align: center;
+    display: none;
+}
+.more img{
+    background-color: white;
+    height: 30px;
+    border-radius: 500px;
+    margin-top: 10px;
 
+}
 
 
 /*SZÖVEGEK*/
@@ -201,6 +225,8 @@ main{
     text-align: center;
     margin-bottom: 10px;
     font-size: 30px;
+    color: rgb(51, 80, 127);
+    font-weight: 500;
 }
 
 .paragraphbox p{
@@ -271,10 +297,33 @@ main{
 
 
 /* FOOTER */
-footer{
-    text-align: right;
+footer .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: black;
+
+}
+.info a{
+    text-decoration: none;
+    color:white;
+}
+.info iframe{
+    width: 75%;
+}
+footer .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
-    background-color: #747474;
+    background-color: rgb(51, 80, 127);
+}
+footer .fb img{
+    margin-left: 20px;
+    margin-top: 3px;
+    height: 30px;
 }
 
 @media only screen and (min-width: 600px) {
