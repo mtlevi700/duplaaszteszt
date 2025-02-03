@@ -6,20 +6,21 @@
   font-optical-sizing: auto;
   font-weight: 450;
   font-style: normal;
+
 }
 
 *{
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Oswald';
-    font-size: 15px;
-
+    font-size: 16px;
+    line-height: 1.5;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
     }
+
 body{
     background-color: #f6f3f3;
 }
@@ -225,7 +226,7 @@ main{
 .paragraphbox h1{
     text-align: center;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 27px;
     color: rgb(51, 80, 127);
     font-weight: 500;
 }
@@ -255,14 +256,13 @@ main{
     background-size: cover;
     gap: 10px;
     text-align: center;
-    min-width: 250px;
 
 }
 
 .prof {
     margin: 10px 0; /* according to gap (same or twice the amount) */
     width: 75%;
-    min-width: 250px;
+
     /* csak gépre
     background-image: url('images/index_html/static_background/bg_mid.jpg');
     background-attachment: fixed;
@@ -278,7 +278,7 @@ main{
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.43);
     padding: 10px;
-    min-height:150px;
+    min-height:200px;
 }
 .prof img{
     height: 25px;
@@ -311,38 +311,63 @@ main{
     background-color: black;
 
 }
-.maps, .contact, .opening{
-
-
-}
 .info img{
-    height: 60px;
-    width: auto;
+    padding-bottom: 10px;
 }
+.house{
+    padding-bottom: 0 !important;
+}
+.big{
+    min-width: 40px;
+    width: 14vw;
+    max-width: 70px; 
+}
+.small{
+    min-width: 30px;
+    width: 7vw;
+    max-width: 45px;
+    padding-bottom: 0 !important;
+}
+
+.contact .upper{
+    margin-bottom: 5px;
+}
+
 .info a{
-    text-decoration: none;
+
     color:white;
 }
-.info iframe{
-    width: 75%;
-}
+
+
 footer .bottom{
     display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     height: 50px;
     background-color: rgb(51, 80, 127);
 }
-footer .fb img{
+.info .white{
+    width: 30vw;
+    min-width: 111.19px;
+    max-width: 155px;
+
+}
+/* footer .fb img{
     margin-left: 20px;
     margin-top: 3px;
     height: 30px;
-}
+} */
 
 @media only screen and (min-width: 600px) {
     /* tablet */
     .slick-slide {
         margin: auto 5px;
     }
-
+    .profbox{
+        height: 30vw;
+        flex-direction: row;
+        gap: 20px;
+        min-width: 200px;
+    }
 }
