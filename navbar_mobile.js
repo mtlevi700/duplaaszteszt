@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         close.style.display = 'none';
         nav.classList.remove('active');
         nav.addEventListener('transitionend', function() {
-            if (!nav.classList.contains('active')) {
+            if (!nav.classList.contains('active')) { //ha az aktív osztály nincs rajta
                 nav.style.display = 'none';
             }
         }, { once: true }); // Csak egyszer fut le az eseménykezelő
