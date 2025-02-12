@@ -23,7 +23,8 @@
     }
 
 body{
-    background-color: #f6f3f3;
+
+    background-color: #ffffff;
 }
 
 
@@ -45,7 +46,7 @@ header{
     justify-content: center;
     width: 100%;
     height: 100%;
-    border-bottom: 3px solid #fe011e;
+
     
 }
 
@@ -138,6 +139,9 @@ nav ul li{
     padding: 14px 10px;
 
 }
+nav ul li:first-child{
+    border-top: 3px solid #f33a39;
+}
 
 nav ul li a{
     display:flex;
@@ -180,7 +184,7 @@ main{
 }
 
 .slick-dots li button:before {
-    color: white !important;
+    color: black !important;
     /* muszáj important, különben a pseudo element átírja */
 }
 
@@ -220,7 +224,7 @@ main{
     display: flex;
     flex-direction: column;
     margin: 15px;
-    background-color: #ffffff;
+    background-color: #f1f4f8;
     gap: 8px;
     padding: 18px;
 }
