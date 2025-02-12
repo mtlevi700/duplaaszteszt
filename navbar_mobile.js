@@ -22,4 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }, { once: true }); // Csak egyszer fut le az eseménykezelő
     });
+
+    
 });
