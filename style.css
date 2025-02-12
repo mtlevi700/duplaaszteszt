@@ -262,17 +262,16 @@ main{
 .prof {
     margin: 10px 0; /* according to gap (same or twice the amount) */
     width: 75%;
-
     /* csak gépre
     background-image: url('images/index_html/static_background/bg_mid.jpg');
     background-attachment: fixed;
     background-size: cover; */
     color:white;
-
+    max-width: 300px;
 }
 
 
-.text-bg{
+.prof{
     display:flex;
     justify-content: center;
     flex-direction: column;
@@ -298,7 +297,7 @@ main{
 
 
 /* FOOTER */
-.info{
+.info, .about{
     display: flex;
     flex-direction: column;
     padding: 20px 0;
@@ -314,11 +313,8 @@ main{
 .info img{
     padding-bottom: 10px;
 }
-.house{
-    padding-bottom: 0 !important;
-}
 .big{
-    min-width: 40px;
+    min-width: 50px;
     width: 14vw;
     max-width: 70px; 
 }
@@ -329,7 +325,7 @@ main{
     padding-bottom: 0 !important;
 }
 
-.contact .upper{
+.upper{
     margin-bottom: 5px;
 }
 
@@ -349,11 +345,11 @@ footer .bottom{
     height: 50px;
     background-color: rgb(51, 80, 127);
 }
-.info .white{
+.footerbot .logo{
     width: 30vw;
-    min-width: 111.19px;
+    min-width: 130px;
     max-width: 155px;
-
+    margin-top: 20px;
 }
 /* footer .fb img{
     margin-left: 20px;
@@ -363,13 +359,51 @@ footer .bottom{
 
 @media only screen and (min-width: 600px) {
     /* tablet */
+    .professions{
+
+    }
+
     .slick-slide {
         margin: auto 5px;
     }
     .profbox{
-        height: 30vw;
         flex-direction: row;
         gap: 20px;
-        min-width: 200px;
+        margin: 0 15px;
+        min-height: 260px;
+        padding: 15px;
+    }
+    .prof{
+        margin:0;
+        width: 35%;
+    }
+
+    .about{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .footerbot{
+        display: flex;
+        width: 85%;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    .social{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .footerbot .logo{
+        margin-top: 0;
+        padding: 0;
+        order: -1;
+    max-width: 120px;
+    }
+    .small{
+        max-width: 30px;
     }
 }
